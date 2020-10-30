@@ -77,6 +77,31 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>PriceBook__mdt.Base_Charge__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PriceBook__mdt.Document__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PriceBook__mdt.Fast_Delivery__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PriceBook__mdt.NormalDelivery__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>PriceBook__mdt.Product__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Quotation__c.Package__c</field>
         <readable>true</readable>
@@ -141,6 +166,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Drivers__c-Driver Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PriceBook__mdt-PriceBook Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Quotation__c-Quotation Layout</layout>
