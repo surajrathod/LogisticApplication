@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#9E5512</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>FastFastLogistic</label>
+    <navType>Standard</navType>
+    <tabs>Customers</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Drivers__c</tabs>
+    <tabs>Shipment_Package__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>FastFastLogistic_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,84 @@
+<template>
+    <lightning-record-edit-form object-api-name="Customer__c" onsuccess={handleSuccess}>
+        <lightning-messages>
+        </lightning-messages>
+       
+        <lightning-card title="CustomerCreate"
+        icon-name="standard:contact">
+        <div class="slds-var-m-around_medium">
+            <div class="slds-grid slds-gutters slds-wrap slds-m-bottom_small">
+            
+                <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 ">
+                    <fieldset class="slds-box">
+                        <legend>Sender Information</legend>
+                    <div class="slds-grid slds-wrap slds-gutters">
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                            <lightning-input-field field-name="Name"></lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                            <lightning-input-field field-name="FromEmail__c"></lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                            <lightning-input-field field-name="FromPhone__c"></lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                            <lightning-input-field field-name="FromStreet__c"></lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                            <lightning-input-field field-name="FromCountry__c"></lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                            <lightning-input-field field-name="FromCity__c"></lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                            <lightning-input-field field-name="FromState__c"></lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                            <lightning-input-field field-name="FromPinCode__c"></lightning-input-field>
+                        </div>
+                    </div>
+                </fieldset>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 ">
+                    <fieldset class="slds-box">
+                        <legend>Receiving Information</legend>
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                                <lightning-input-field field-name="ReceivingName__c"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                                <lightning-input-field field-name="ToEmail__c"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                                <lightning-input-field field-name="ToPhone__c"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                                <lightning-input-field field-name="ToStreet__c"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                                <lightning-input-field field-name="ToCountry__c"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                                <lightning-input-field field-name="ToCity__c"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                                <lightning-input-field field-name="ToState__c"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                                <lightning-input-field field-name="ToPinCode__c"></lightning-input-field>
+                            </div>
+                        </div>
+                </fieldset>
+                </div>
+        </div>
+        
+            <lightning-button
+                class="slds-m-top_small"
+                variant=""
+                type="submit"
+                label="Create Customer">
+            </lightning-button>
+        </div>
+        </lightning-card>
+    </lightning-record-edit-form>
+</template>
