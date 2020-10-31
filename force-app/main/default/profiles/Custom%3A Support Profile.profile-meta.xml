@@ -5,6 +5,18 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
+    <classAccesses>
+        <apexClass>EmailManager</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>HandlerNotifications</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>HandlerQuotation</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <custom>true</custom>
     <fieldPermissions>
         <editable>true</editable>
@@ -176,6 +188,10 @@
     <layoutAssignments>
         <layout>Shipment_Package__c-ShipmentPackage Layout</layout>
     </layoutAssignments>
+    <pageAccesses>
+        <apexPage>InvoiceGenerate</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
     <tabVisibilities>
         <tab>Customer__c</tab>
         <visibility>DefaultOn</visibility>

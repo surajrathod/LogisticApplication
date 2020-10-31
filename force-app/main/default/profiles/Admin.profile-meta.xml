@@ -224,6 +224,10 @@
         <object>Shipment_Package__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <pageAccesses>
+        <apexPage>InvoiceGenerate</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
     <tabVisibilities>
         <tab>Customer__c</tab>
         <visibility>DefaultOn</visibility>
