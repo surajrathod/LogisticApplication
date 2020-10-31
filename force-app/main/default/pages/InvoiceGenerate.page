@@ -1,0 +1,44 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false"  standardController="Shipment_Package__c" renderAs="pdf">
+   <head>
+    <style type="text/css">
+    	.text-center {
+                text-align: center;
+            }
+        table{
+        width:100%}
+    </style>
+    </head>
+    <h1 class='text-center'>Invoice</h1>
+    <hr/>
+    
+    <p>Shipment-No:- <apex:outputText value="{!Shipment_Package__c.Name}"></apex:outputText></p>
+    <table >
+        <tr>
+        	<th>From Address:-</th>
+            <th>To Address:-</th>
+        </tr>
+        <tr>
+        	<th><apex:outputText value="{!Shipment_Package__c.Customer__r.Name}"></apex:outputText></th>
+            <th><apex:outputText value="{!Shipment_Package__c.Customer__r.ReceivingName__c}"></apex:outputText></th>
+        </tr>
+        <tr>
+            <td>
+                <apex:outputText value="{!Shipment_Package__c.Customer__r.FromStreet__c}"></apex:outputText><br/> 
+                <apex:outputText value="{!Shipment_Package__c.Customer__r.FromCountry__c}"></apex:outputText>, 
+                <apex:outputText value="{!Shipment_Package__c.Customer__r.FromCity__c}"></apex:outputText>
+                <apex:outputText value="{!Shipment_Package__c.Customer__r.FromState__c}"></apex:outputText><br/>
+                <apex:outputText value="{!Shipment_Package__c.Customer__r.FromPinCode__c}"></apex:outputText>
+            </td>
+            <td>
+                <apex:outputText value="{!Shipment_Package__c.Customer__r.ToStreet__c}"></apex:outputText><br/> 
+                <apex:outputText value="{!Shipment_Package__c.Customer__r.ToCountry__c}"></apex:outputText>, 
+                <apex:outputText value="{!Shipment_Package__c.Customer__r.ToCity__c}"></apex:outputText>
+                <apex:outputText value="{!Shipment_Package__c.Customer__r.ToState__c}"></apex:outputText><br/>
+                <apex:outputText value="{!Shipment_Package__c.Customer__r.ToPinCode__c}"></apex:outputText><br/>
+                <apex:outputText value="{!Shipment_Package__c.Customer__r.ToPhone__c}"></apex:outputText>
+            </td>
+        </tr>
+    </table>
+    <hr/>
+   <apex:relatedList list="Quotation__r" title="Prices"/>
+</apex:page>
