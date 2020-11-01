@@ -16,6 +16,7 @@ logistic Application where you can create Customer, create the shipment for the 
 - Timely Notification to the Customers about their Orders .
 
  <img src="CreateCustomer.png" align='' >
+ 
 # Installation Process
 
 ## Installing the app using a Scratch Org
