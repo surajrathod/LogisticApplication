@@ -15,5 +15,4 @@
     <tabs>Drivers__c</tabs>
     <tabs>Shipment_Package__c</tabs>
     <uiType>Lightning</uiType>
-    <utilityBar>FastFastLogistic_UtilityBar</utilityBar>
 </CustomApplication>
